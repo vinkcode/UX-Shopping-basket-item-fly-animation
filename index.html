@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UX Item to Basket Animation</title>
     <style>
         body {
             background: grey;
         }
         .target{ 
             background: burlywood;
-            width: 100px;
-            height: 100px;
             float: right;
+            width: 300px;
+            height: 300px;
+            right: 0;
+            top: 0;
+            margin: 1em;
+            padding: 1em;
         }
-        .projectiles {
-            background: greenyellow;
-            width: 100px;
-            height: 100px;
+        .shots {
+            background: burlywood;
             float: left;
-            position: relative;
-            top: 200px;
+            width: 500px;
+            height: 100px;
+            margin: 1em;
+            padding: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="target">basket</div>
-    <div class="projectiles">item</div>
-    <div class="projectiles">item 2</div>
+    <div class="target">
+        <h3>basket</h3>
+    </div>
+    <div class="shots"><h3>item 1</h3><button class="shoot">add to cart</button></div>
+    <div class="shots"><h3>item 2</h3><button class="shoot">add to cart</button></div>
+    <div class="shots"><h3>item 3</h3><button class="shoot">add to cart</button></div>
     <script src="script.js"></script>
 </body>
 </html>
